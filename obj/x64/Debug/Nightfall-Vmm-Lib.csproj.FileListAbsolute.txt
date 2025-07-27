@@ -1,0 +1,8 @@
+C:\Users\nightfall\Documents\Coding\!MyProjects\C#\Nightfall-Vmm-Lib\bin\x64\Debug\Nightfall-Vmm-Lib.dll
+C:\Users\nightfall\Documents\Coding\!MyProjects\C#\Nightfall-Vmm-Lib\bin\x64\Debug\Nightfall-Vmm-Lib.pdb
+C:\Users\nightfall\Documents\Coding\!MyProjects\C#\Nightfall-Vmm-Lib\bin\x64\Debug\vmmsharp.dll
+C:\Users\nightfall\Documents\Coding\!MyProjects\C#\Nightfall-Vmm-Lib\obj\x64\Debug\Nightfall-Vmm-Lib.csproj.AssemblyReference.cache
+C:\Users\nightfall\Documents\Coding\!MyProjects\C#\Nightfall-Vmm-Lib\obj\x64\Debug\Nightfall-Vmm-Lib.csproj.CoreCompileInputs.cache
+C:\Users\nightfall\Documents\Coding\!MyProjects\C#\Nightfall-Vmm-Lib\obj\x64\Debug\Nightfal.071B0C46.Up2Date
+C:\Users\nightfall\Documents\Coding\!MyProjects\C#\Nightfall-Vmm-Lib\obj\x64\Debug\Nightfall-Vmm-Lib.dll
+C:\Users\nightfall\Documents\Coding\!MyProjects\C#\Nightfall-Vmm-Lib\obj\x64\Debug\Nightfall-Vmm-Lib.pdb
