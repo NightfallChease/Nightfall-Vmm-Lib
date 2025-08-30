@@ -1,14 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Vmmsharp;
 
 namespace Nightfall_Vmm_Lib
 {
     public class vmlib
     {
+        //Reading funcs
         public static int ByteArrayToInt(byte[] bytes)
         {
             if (bytes == null)
@@ -25,39 +22,35 @@ namespace Nightfall_Vmm_Lib
 
             for (int i = 0; i < offsets.Length; i++)
             {
-                // Lese 8 Bytes Pointer-Adresse (64bit)
+                //Read 8 bytes (x64bit)
                 byte[] buffer = proc.MemRead(addr, 8);
                 if (buffer == null || buffer.Length != 8)
-                    throw new Exception("Fehler beim Lesen des Speichers.");
+                    throw new Exception("Error reading out memory");
 
                 addr = BitConverter.ToUInt64(buffer, 0);
                 if (addr == 0)
-                    throw new Exception("Null Pointer encountered.");
+                    throw new Exception("Null pointer encountered");
 
-                // Offset zum nächsten Level hinzufügen (außer beim letzten)
+                //Add offset if not the last iteration
                 if (i < offsets.Length)
                     addr += offsets[i];
             }
 
             return addr;
         }
-
-
-        // Read Functions
         public static float ReadFloat(VmmProcess proc, ulong address)
         {
             byte[] buffer = proc.MemRead(address, 4);
             if (buffer == null || buffer.Length != 4)
-                throw new Exception("Fehler beim Lesen des Float-Wertes.");
+                throw new Exception("Error reading float value");
 
             return BitConverter.ToSingle(buffer, 0);
         }
-
         public static double ReadDouble(VmmProcess proc, ulong address)
         {
             byte[] buffer = proc.MemRead(address, 8);
             if (buffer == null || buffer.Length != 8)
-                throw new Exception("Fehler beim Lesen des Double-Wertes.");
+                throw new Exception("Error reading double value");
 
             return BitConverter.ToDouble(buffer, 0);
         }
@@ -66,7 +59,7 @@ namespace Nightfall_Vmm_Lib
         {
             byte[] buffer = proc.MemRead(address, 4);
             if (buffer == null || buffer.Length != 4)
-                throw new Exception("Fehler beim Lesen des Integer-Wertes.");
+                throw new Exception("Error reading integer value");
 
             return BitConverter.ToInt32(buffer, 0);
         }
@@ -75,7 +68,7 @@ namespace Nightfall_Vmm_Lib
         {
             byte[] buffer = proc.MemRead(address, 1);
             if (buffer == null || buffer.Length != 1)
-                throw new Exception("Fehler beim Lesen des Byte-Wertes.");
+                throw new Exception("Error reading byte value");
 
             return buffer[0];
         }
@@ -84,44 +77,44 @@ namespace Nightfall_Vmm_Lib
         {
             byte[] buffer = proc.MemRead(address, length);
             if (buffer == null || buffer.Length != length)
-                throw new Exception("Fehler beim Lesen des Byte-Arrays.");
+                throw new Exception("Error reading byte array");
 
             return buffer;
         }
 
-        // Write Functions
+        //Write funcs
         public static void WriteFloat(VmmProcess proc, ulong address, float value)
         {
             byte[] buffer = BitConverter.GetBytes(value);
             if (!proc.MemWrite(address, buffer))
-                throw new Exception("Fehler beim Schreiben des Float-Wertes.");
+                throw new Exception("Error writing float value");
         }
 
         public static void WriteDouble(VmmProcess proc, ulong address, double value)
         {
             byte[] buffer = BitConverter.GetBytes(value);
             if (!proc.MemWrite(address, buffer))
-                throw new Exception("Fehler beim Schreiben des Double-Wertes.");
+                throw new Exception("Error writing double value");
         }
 
         public static void WriteInt32(VmmProcess proc, ulong address, int value)
         {
             byte[] buffer = BitConverter.GetBytes(value);
             if (!proc.MemWrite(address, buffer))
-                throw new Exception("Fehler beim Schreiben des Integer-Wertes.");
+                throw new Exception("Error writing integer value");
         }
 
         public static void WriteByte(VmmProcess proc, ulong address, byte value)
         {
             byte[] buffer = new byte[] { value };
             if (!proc.MemWrite(address, buffer))
-                throw new Exception("Fehler beim Schreiben des Byte-Wertes.");
+                throw new Exception("Error writing byte value");
         }
 
         public static void WriteByteArray(VmmProcess proc, ulong address, byte[] values)
         {
             if (!proc.MemWrite(address, values))
-                throw new Exception("Fehler beim Schreiben des Byte-Arrays.");
+                throw new Exception("Error writing byte array");
         }
     }
 }

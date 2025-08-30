@@ -3,11 +3,11 @@
   "WorkspaceRootPath": "C:\\Users\\nightfall\\Documents\\Coding\\!MyProjects\\C#\\Nightfall-Vmm-Lib\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|Nightfall-Vmm-Lib||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+      "AbsoluteMoniker": "D:0:0:{8F640FDE-089F-4AAB-8DF2-B3B19ED08C6D}|Nightfall-Vmm-Lib.csproj|C:\\Users\\nightfall\\Documents\\Coding\\!MyProjects\\C#\\Nightfall-Vmm-Lib\\vmlib.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F640FDE-089F-4AAB-8DF2-B3B19ED08C6D}|Nightfall-Vmm-Lib.csproj|solutionrelative:vmlib.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8F640FDE-089F-4AAB-8DF2-B3B19ED08C6D}|Nightfall-Vmm-Lib.csproj|c:\\users\\nightfall\\documents\\coding\\!myprojects\\c#\\nightfall-vmm-lib\\vmlib.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8F640FDE-089F-4AAB-8DF2-B3B19ED08C6D}|Nightfall-Vmm-Lib.csproj|solutionrelative:vmlib.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|Nightfall-Vmm-Lib||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8F640FDE-089F-4AAB-8DF2-B3B19ED08C6D}|Nightfall-Vmm-Lib.csproj|c:\\users\\nightfall\\documents\\coding\\!myprojects\\c#\\nightfall-vmm-lib\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|5e9a8ac2-4f34-4521-858f-4c248ba31532"
@@ -20,15 +20,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Nightfall-Vmm-Lib",
               "DocumentMoniker": "C:\\Users\\nightfall\\Documents\\Coding\\!MyProjects\\C#\\Nightfall-Vmm-Lib\\Nightfall-Vmm-Lib.csproj",
               "RelativeDocumentMoniker": "Nightfall-Vmm-Lib.csproj",
@@ -40,13 +44,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "vmlib.cs",
               "DocumentMoniker": "C:\\Users\\nightfall\\Documents\\Coding\\!MyProjects\\C#\\Nightfall-Vmm-Lib\\vmlib.cs",
               "RelativeDocumentMoniker": "vmlib.cs",
               "ToolTip": "C:\\Users\\nightfall\\Documents\\Coding\\!MyProjects\\C#\\Nightfall-Vmm-Lib\\vmlib.cs",
               "RelativeToolTip": "vmlib.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAqwBUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAGIAAAAAAAAAAAAAwBUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-20T22:32:21.634Z",
               "EditorCaption": ""
